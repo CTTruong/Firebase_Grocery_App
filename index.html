@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet"  href="style.css"/>
+  <title>Grocery App</title>
+</head>
+
+<body>
+
+  <div>
+    <h3> Register </h3>
+    <input id="regEmail" type="email" placeholder="Enter Email Address" >
+    <input id="regPass" type="password" placeholder="Enter Password">
+    <button id="submitRegisterInfo">Submit</button>
+  </div>
+
+  <div>
+    <h3> Login </h3>
+    <input id="loginEmail" type="email" placeholder="Enter Email Address">
+    <input id="loginPass" type="password" placeholder="Enter Password">
+    <button id="submitUserInfo">Submit</button>
+  </div>
+
+  <div>
+    <h3> Enter Store Name </h3>
+    <input id="storeName" type="text" placeholder="Enter Store Name">
+    <button id="submitStoreName">Submit</button>
+  </div>
+
+  <div>
+    <ul id="groceryList">
+    </ul>
+  </div>
+
+</body>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-database.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+<script>
+
+  var config = {
+    apiKey: "AIzaSyDsl5muKxnA2krkhxUOIP8WuiXzAzr2S3M",
+    authDomain: "groceryapp-8f414.firebaseapp.com",
+    databaseURL: "https://groceryapp-8f414.firebaseio.com",
+    projectId: "groceryapp-8f414",
+    storageBucket: "groceryapp-8f414.appspot.com",
+    messagingSenderId: "82077996550"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="app.js"></script>
+</html>
